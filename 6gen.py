@@ -87,7 +87,7 @@ def GrowCluster(seedList):
     maxIndex = 0
     maxRangeSize = float('inf')#Inf inity
     maxCluster = None
-    for index in range(0,len(clusterList)-1):         
+    for index in range(0,len(clusterList)):   #range(0,len(clusterList)) = [0, 1, 2,..., len()-1]      
         cluster = clusterList[index]
         candidateSeeds = FindCandidateSeeds(cluster,seedList)
         #if len(candidateSeeds)==0:
